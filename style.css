@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  padding: 3rem;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #3e4455;
+}
+
+.input-control {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+  width: 100%;
+}
+
+.contact-msg {
+  height: 150px;
+  line-height: 1.2;
+  padding: 20px 30px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  resize: none;
+}
+
+.input-control:focus-visible,
+.contact-msg:focus-visible {
+  outline: none;
+}
+
+.btn-submit {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px 30px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  background-color: #ff5252;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mesaage after form submission */
+
+.loader {
+  width: 100%;
+  padding: 10px;
+  background-color: #3d4145;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 600;
+  display: none;
+}
+
+.loader.show {
+  display: block;
+}
+
+.loader i {
+  color: #fff;
+  animation: rotateme 0.4s linear infinite;
+}
+
+/* Loader Animation */
+
+@keyframes rotateme {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(630deg);
+  }
+}
+
+.form-message {
+  display: none;
+  width: 100%;
+  background-color: #3d4145;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-message.show {
+  display: block;
+}
+
+.success-msg {
+  color: green;
+  line-height: 3;
+}
+
+.error-msg {
+  color: red;
+  line-height: 3;
+}

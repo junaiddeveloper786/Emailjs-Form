@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Email</title>
+    <title>Send Email</title>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form id="contact-form" method="POST" action="#">
+      <label for="Email">Email address *</label>
+      <input
+        type="email"
+        name="email"
+        class="input-control"
+        placeholder="Enter Email"
+      />
+      <label for="Name">Name *</label>
+      <input
+        type="text"
+        name="name"
+        class="input-control"
+        placeholder="Enter Name"
+      />
+      <label for="Message">Message *</label>
+      <textarea
+        name="message"
+        class="contact-msg"
+        row="9"
+        placeholder="Enter Message"
+      ></textarea>
+      <button type="submit" class="btn-submit">Submit</button>
+      <div class="loader">
+        <i class="lni lni-spinner-solid"></i>
+      </div>
+      <div class="form-message"></div>
+    </form>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
