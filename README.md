@@ -16,10 +16,10 @@ A simple and fully functional **Contact Form** using **EmailJS** to send emails 
 - **EmailJS API** - Send emails without a backend  
 
 ## 🎬 Live Demo  
-🔗 [View Live Project](https://junaiddeveloper786.github.io/EmailJS-Form/)  
+🔗 [View Live Project](https://junaiddeveloper786.github.io/Emailjs-Form/)  
 
 ## 🚀 How to Use  
 1. **Clone the repository**:  
    ```bash
-   git clone https://github.com/junaiddeveloper786/EmailJS-Form.git
-   cd EmailJS-Form
+   git clone https://github.com/junaiddeveloper786/Emailjs-Form.git
+   cd Emailjs-Form
